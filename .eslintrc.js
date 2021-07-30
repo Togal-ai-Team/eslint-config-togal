@@ -1,10 +1,22 @@
 module.exports = {
-  extends: ["eslint:recommended", "plugin:prettier/recommended"],
+  extends: ["eslint:recommended"],
   parserOptions: {
     ecmaVersion: 6,
     sourceType: "module",
   },
   rules: {
-    semi: 2,
-  },
+    "indent": ["error", 2],
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
+    "quotes": [
+      "error",
+      "double"
+    ],
+    "semi": [
+      "error",
+      "always"
+    ]
+  }
 };
